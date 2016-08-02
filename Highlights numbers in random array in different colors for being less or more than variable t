@@ -1,0 +1,31 @@
+package apcs;
+public class LessandMore {
+	  public static void main(String[] args) {
+	int x = 0;
+	int y = 359;
+	int l = 0;
+	while (y > -40) {
+	while (x < 361 ) {
+		int [] array;
+	    int t = 50;
+	    array = new int [1];
+	    array [0] = Window.random(1, 100);
+	    Window.out.color(0, 0, 0);
+	    Window.out.rectangle(x + 50, y + 50, 40, 40); 
+	    Window.out.color(255, 255, 255);
+	    Window.out.print(array[l], x + 50, y + 50); ;
+	    if (array[l] < t) {
+	     Window.out.color(0, 255, 0);
+	     Window.out.print (array[l], x + 50, y + 50 );
+	   }
+	    if (array[l] > t) {
+	     Window.out.color (255, 0, 0);
+	     Window.out.print (array[l], x + 50, y + 50 );
+	   }
+	   x = x + 40; 
+	}
+	x = 0;
+	y = y - 40;
+	}
+}
+}
